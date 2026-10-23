@@ -447,6 +447,31 @@ Each test case includes its preconditions, steps, expected result, actual result
 - `evidence/checkout btn.png`
 
 **Defect Reference:** DEF-005 (provisional)
+# SauceDemo Test Cases
+
+| Test Case ID | Test Scenario | Test Steps | Test Data | Expected Result | Actual Result | Status |
+|---|---|---|---|---|---|---|
+| TC-001 | Login with valid credentials | Enter valid credentials and click Login. | `standard_user` | Products page is displayed. | Products page displayed successfully. | Pass |
+| TC-002 | Login with locked-out account | Enter locked-out credentials and click Login. | `locked_out_user` | Login is blocked with an error message. | Locked-out error message displayed. | Pass |
+| TC-003 | Login with invalid credentials | Enter an incorrect password and click Login. | Invalid password | An appropriate error message is displayed. | Invalid credentials error displayed. | Pass |
+| TC-004 | Sort products A to Z | Select Name (A to Z). | `standard_user` | Products are sorted alphabetically. | Products sorted correctly. | Pass |
+| TC-005 | Sort products Z to A | Select Name (Z to A). | `standard_user` | Products are sorted in reverse alphabetical order. | Products sorted correctly. | Pass |
+| TC-006 | Sort prices low to high | Select Price (low to high). | `standard_user` | Products are sorted by ascending price. | Products sorted correctly. | Pass |
+| TC-007 | Sort prices high to low | Select Price (high to low). | `standard_user` | Products are sorted by descending price. | Products sorted correctly. | Pass |
+| TC-008 | Add product to cart | Click Add to cart and open the cart. | `standard_user` | Product appears in the cart. | Product appeared in the cart. | Pass |
+| TC-009 | Remove product from cart | Add a product, open the cart, and click Remove. | `standard_user` | Product is removed from the cart. | Product was removed successfully. | Pass |
+| TC-010 | Reset application state | Add a product and select Reset App State. | `standard_user` | Cart is cleared. | Cart was cleared. | Pass |
+| TC-011 | Open checkout page | Open the cart and click Checkout. | `standard_user` | Checkout information form appears. | Checkout page appeared. | Pass |
+| TC-012 | Submit checkout information | Enter valid details and click Continue. | Valid checkout details | Checkout overview appears. | Checkout overview appeared. | Pass |
+| TC-013 | Validate required last name | Leave Last Name blank and click Continue. | Blank last name | Required-field error is displayed. | Required-field error displayed. | Pass |
+| TC-014 | Verify checkout totals | Review the item, tax, and total on the overview page. | Sauce Labs Bolt T-Shirt | Order totals are calculated correctly. | Item: $15.99; tax: $1.28; total: $17.27. | Pass |
+| TC-015 | Complete an order | Click Finish on the checkout overview. | Valid checkout details | Order confirmation appears. | Order confirmation appeared. | Pass |
+| TC-016 | Download and verify order PDF | Generate the order PDF, open it, and verify the order confirmation. | Completed order | PDF opens and displays the order confirmation. | PDF opened successfully and displayed the order confirmation. | Pass |
+| TC-017 | Sort products with error account | Log in and select a sorting option. | `error_user` | Sorting works as expected. | Sorting error message displayed. | Fail |
+| TC-018 | Remove cart item with error account | Add a product, open the cart, and click Remove. | `error_user` | Product is removed from the cart. | Product was removed successfully. | Pass |
+| TC-019 | Enter last name with problem account | Open checkout and enter a last name. | `problem_user` | Last-name field accepts input. | Last-name input did not work as expected. | Fail |
+| TC-020 | Validate postal code with problem account | Enter alphabetic characters in Postal Code. | `problem_user` | Postal code follows the expected validation rules. | Alphabetic characters were accepted. | Fail |
+| TC-021 | Inspect UI alignment | Inspect the cart icon and checkout interface. | `visual_user` | UI elements are aligned consistently. | Misalignment was observed. | Fail |
 
 ## 6. Defect Traceability
 
