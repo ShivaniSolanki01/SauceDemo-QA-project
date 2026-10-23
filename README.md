@@ -85,15 +85,36 @@ The project follows a structured testing workflow:
 
 ## Repository Structure
 
+## Repository Structure
+
 ```text
 saucedemo-qa-project/
 ├── README.md
 ├── test-cases.md
 ├── defect-reports.md
 ├── automation/
-│   └── (automation source files)
+│   └── SauceDemo.Tests/
+│       ├── Base/
+│       │   └── BaseTest.cs
+│       ├── Pages/
+│       │   ├── LoginPage.cs
+│       │   ├── ProductsPage.cs
+│       │   ├── CartPage.cs
+│       │   └── CheckoutPage.cs
+│       ├── Tests/
+│       │   ├── LoginTests.cs
+│       │   ├── ProductTests.cs
+│       │   ├── CartTests.cs
+│       │   ├── CheckoutTests.cs
+│       │   ├── OrderTests.cs
+│       │   └── NavigationTests.cs
+│       └── SauceDemo.Tests.csproj
 └── evidence/
-    └── (screenshots and test reports)
+    └── Screenshots and supporting test evidence
+```
+
+The repository contains manual test documentation, defect reports, supporting evidence and automated UI tests developed using Selenium WebDriver, C# and NUnit.
+
 ```
 
 Files and folders will be populated with the corresponding artefacts as they are created and verified.
