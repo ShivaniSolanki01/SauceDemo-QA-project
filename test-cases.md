@@ -485,5 +485,3 @@ Each defect report should include:
 - Severity and priority, where justified
 - Supporting evidence
 - Status and retest results, where applicable
-
-Account-specific behaviours should be investigated against the intended behaviour of SauceDemo before being classified as confirmed defects.
