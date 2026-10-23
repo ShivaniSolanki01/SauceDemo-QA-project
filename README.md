@@ -57,10 +57,11 @@ The repository serves as a practical portfolio demonstrating QA methodologies, a
 - Completing the order workflow.
 
 ### 5. UI Automation
-- Automating selected user workflows.
-- Using maintainable test scripts and reusable locators.
-- Organising tests for readability and repeatability.
-- Recording execution outcomes and investigating failures.
+- Automate selected user workflows using Selenium WebDriver, C# and NUnit.
+- Apply the Page Object Model (POM) to organise page interactions and improve maintainability.
+- Validate login, product sorting, shopping cart operations, checkout and navigation workflows.
+- Use explicit waits to handle dynamic page interactions and improve test reliability.
+- Execute automated tests and investigate failures using observed results and supporting evidence.
 
 ## Testing Approach
 
@@ -138,9 +139,7 @@ Files and folders will be populated with the corresponding artefacts as they are
 
 **SauceDemo QA Portfolio Project**
 
-This repository is organised to showcase practical software testing skills through test design, execution documentation, defect analysis and UI automation.
-
-The project is considered complete when its intended testing artefacts and selected automation scenarios have been implemented, verified and documented.
+The project includes documented manual test cases, defect reports with supporting evidence, and automated UI tests using Selenium WebDriver, C# and NUnit. The latest recorded automation run completed with 24 tests passing. Further improvements may be made as the project documentation and portfolio are refined.
 
 ## About
 
