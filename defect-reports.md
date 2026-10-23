@@ -1,4 +1,3 @@
-
 # SauceDemo Defect Reports
 
 ## DEF-001: Product Sorting Error
@@ -89,13 +88,14 @@ The Postal Code field accepted alphabetic characters during checkout testing.
 6. Continue and observe the result.
 
 ### Expected Result
-Postal Code input should follow the application's intended validation rules.
+The Postal Code field should validate input according to the application's defined requirements.
 
 ### Actual Result
-Alphabetic characters were accepted.
+Alphabetic characters were accepted. The expected postal-code validation rules have not been independently confirmed.
 
 ### Evidence
 - `evidence/PostCodeValidation.png`
+
 ---
 
 ## DEF-004: UI Misalignment
